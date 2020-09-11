@@ -72,5 +72,30 @@ img{
   color: #ccc;
 }
 
+/* -----------------------menu---------- */
+.filterMenu{
+  padding: 20px;
+  display: block;
+  position: fixed;
+  top: 149px;
+  left: 0;
+  z-index: 1050;
+  cursor: pointer;
+  width: 280px;
+  height: 600px;
+  background: #5041b2;
+  border: 2px solid #ccc;
+}
+h2{
+  margin: 40px 0 20px 10px;
+  color: black;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.menuInput{
+  margin-top: 20px;
+}
+
+
 
 
