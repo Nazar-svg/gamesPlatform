@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import GamePlatform from './Container/GamePlatform/GamePlatform';
 import logo from './imagen/joystick.svg';
 import Button from './Components/UI/Button';
 import axios from 'axios';
@@ -41,7 +42,8 @@ class App extends Component {
             <img src={logo} alt="logo" />
           </div>
           <Button
-            type="primary"
+            type="filter"
+            className="filter"
             onFilterHandler={this.onFilterHandler}
           >
             Filter
@@ -50,13 +52,23 @@ class App extends Component {
           {this.state.showMenu
             ?
             <div className="filterMenu">
+              <div onClick={this.onFilterHandler} >
+                <span className="burger"></span>
+                <span className="burger"></span>
+                <span className="burger"></span>
+              </div>
+
               <h2>Game Platforms</h2>
-              <input
-                    type="text"
-                    className="form-control"
-                    placeholder="platform"
-                    id="platform"
-                />
+              <select className="Select">
+                <option value="value1">Значение 1</option>
+                <option value="value2" selected>Значение 2</option>
+                <option value="value3">Значение 3</option>
+              </select>
+              <Button
+                type="apply"
+              >
+                Apply
+          </Button>
             </div>
             : null
           }
@@ -66,15 +78,12 @@ class App extends Component {
           <div className="inner">
             {this.state.gamesPlatforms.map((item, id) => {
               return (
-                <div className="item" key={item.id}>
-                  <span className='title'>
-                    <span className='name'>{item.name}</span>
-                    <span><strong>Count:</strong><span className="count">{item.games_count}</span></span>
-                  </span>
-                  <div className='itemConteiner'>
-                    <img src={item.image_background} alt="baner" />
-                  </div>
-                </div>
+                <GamePlatform 
+                  key={item.id} 
+                  name={item.name}
+                  games_count={item.games_count}
+                  image_background={item.image_background}
+                />
               )
             })}
           </div>

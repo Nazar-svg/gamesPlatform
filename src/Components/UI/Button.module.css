@@ -3,16 +3,11 @@
     padding: 10px 30px;
     border-radius: 50px;
     border: 1px solid #ccc;
-    /* background: #83bbff; */
     color: #000;
     margin-right: 15px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 12px;
-    position: relative;
-    top: 200px;
-    left: 50px;
-    z-index: 1000;
 }
 .Button:hover {
     box-shadow:  3px 3px 3px 3px rgba( 0, 0, 0, 0.5 );
@@ -40,3 +35,20 @@
     background: #2884f8;
     color: #fff;
 }
+.filter {
+    background: #2884f8;
+    color: #fff;
+    position: relative;
+    top: 200px;
+    left: 50px;
+    z-index: 1000;
+}
+.apply{
+    background: #2884f8;
+    color: #fff;
+    position: relative;
+    top:380px;
+    left: 130px;
+    z-index: 1000;
+  }
+ 

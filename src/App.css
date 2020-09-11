@@ -25,53 +25,11 @@
 }
 .inner{
   display: flex;
-  margin: 150px 10px 50px 10px;
+  margin: 150px 70px 50px 70px;
   flex-wrap: wrap; 
   justify-content: space-between;
   padding-top:100px ;
 }
-.item{
- flex-direction: column;
-  margin-bottom: 50px ;
-  display: flex;
-  width: 33%;
-  height: 250px;
-  justify-content: space-between;
-  
-}
-.itemConteiner{
-  justify-content: space-between;
-  height: 10em;
-  position: relative;
-}
-.title{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-.name{
-  margin-left: 10px;
-  font-size: 17px;
-  font-weight: 700;
-  color: black
-}
-img{
-  display: flex;
-  overflow: hidden;
-  max-width: 350px;
-  max-height:  200px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
-}
-.count{
-  margin-left: 5px ;
-  color: #ccc;
-}
-
 /* -----------------------menu---------- */
 .filterMenu{
   padding: 20px;
@@ -80,9 +38,8 @@ img{
   top: 149px;
   left: 0;
   z-index: 1050;
-  cursor: pointer;
   width: 280px;
-  height: 600px;
+  height: 610px;
   background: #5041b2;
   border: 2px solid #ccc;
 }
@@ -92,9 +49,32 @@ h2{
   text-transform: uppercase;
   font-size: 24px;
 }
-.menuInput{
-  margin-top: 20px;
+.apply{
+  position: relative;
+  top:0;
+  left: 0;
+  z-index: 1000;
 }
+ /* burger */
+  
+ .burger{
+  position: relative;
+  top: 0;
+  left: 200px;
+  display: block;
+  margin-bottom: 6px;
+  width: 30px;
+  border-bottom: 3px solid #000;
+  cursor: pointer;
+}
+
+.Select{
+  margin-left: 8px;
+  width: 220px;
+  height: 40px;
+  display: inline-block;
+}
+
 
 
 

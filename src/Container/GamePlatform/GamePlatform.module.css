@@ -1,0 +1,41 @@
+.GamePlatform{
+    flex-direction: column;
+    margin-bottom: 50px ;
+    display: flex;
+    width: 33%;
+    height: 250px;
+    justify-content: space-between;
+}
+.itemConteiner{
+    justify-content: space-between;
+    height: 10em;
+    position: relative;
+  }
+.Title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+.Name{
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    color: black
+  }
+.Count{
+    margin-left: 5px ;
+    color: #ccc;
+  }
+img{
+    display: flex;
+    overflow: hidden;
+    max-width: 350px;
+    max-height:  200px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
