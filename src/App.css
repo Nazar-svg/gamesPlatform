@@ -1,79 +1,8 @@
 .App {
   background: linear-gradient(90deg, #5041b2 0%, #7969e6 100%);
 }
-.Header {
-  background: linear-gradient(90deg, blue 15%, white 89%);
-  width: 100%;
-  height: 150px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  border-bottom: 2px solid #ccc;
-} 
-.Logo{
-  position: absolute;
-  top: 75px;
-  left: 75px;
-  z-index: 1010;
-}
-.Container{
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-.inner{
-  display: flex;
-  margin: 150px 70px 50px 70px;
-  flex-wrap: wrap; 
-  justify-content: space-between;
-  padding-top:100px ;
-}
-/* -----------------------menu---------- */
-.filterMenu{
-  padding: 20px;
-  display: block;
-  position: fixed;
-  top: 149px;
-  left: 0;
-  z-index: 1050;
-  width: 280px;
-  height: 610px;
-  background: #5041b2;
-  border: 2px solid #ccc;
-}
-h2{
-  margin: 40px 0 20px 10px;
-  color: black;
-  text-transform: uppercase;
-  font-size: 24px;
-}
-.apply{
-  position: relative;
-  top:0;
-  left: 0;
-  z-index: 1000;
-}
- /* burger */
-  
- .burger{
-  position: relative;
-  top: 0;
-  left: 200px;
-  display: block;
-  margin-bottom: 6px;
-  width: 30px;
-  border-bottom: 3px solid #000;
-  cursor: pointer;
-}
 
-.Select{
-  margin-left: 8px;
-  width: 220px;
-  height: 40px;
-  display: inline-block;
-}
+
 
 
 

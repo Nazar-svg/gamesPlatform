@@ -1,0 +1,7 @@
+.GameContent{
+        display: flex;
+        margin: 150px 70px 50px 70px;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+        padding-top:100px ;
+}
