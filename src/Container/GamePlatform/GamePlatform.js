@@ -3,7 +3,7 @@ import classes from './GamePlatform.module.css'
 
 const GamePlatform = props => {
     return (
-        <div className={classes.GamePlatform} >
+        <div className={classes.GamePlatform}  onClick={props.onGamePlatformHandler}>
             <span className={classes.Title}>
                 <span className={classes.Name}>{props.name}</span>
                 <span><strong>Count:</strong><span className={classes.Name}>{props.games_count}</span></span>

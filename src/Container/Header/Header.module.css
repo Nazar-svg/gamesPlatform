@@ -5,7 +5,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1001;
     border-bottom: 2px solid #ccc;
   } 
   .Logo{

@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
-import GameContent from './Components/GameContent/GameContent'
-import Layout from './hoc/Layout'
+import GameContent from './Components/GameContent/GameContent';
+import Layout from './hoc/Layout';
+import Header from './Container/Header/Header';
 
 const App = () => {
   return (
     <Layout>
-    <GameContent />
+      <Header />
+      <GameContent />
     </Layout>
   )
 }

@@ -2,34 +2,41 @@
   padding: 20px;
   display: block;
   position: fixed;
-  top: 149px;
+  top: 0;
   left: 0;
-  z-index: 1050;
+  z-index: 999;
   width: 280px;
-  height: 610px;
+  height: 800px;
   background: #5041b2;
   border: 2px solid #ccc;
 }
 .Burger{
-    position: relative;
-    top: 0;
-    left: 200px;
-    display: block;
-    margin-bottom: 6px;
-    width: 30px;
-    border-bottom: 3px solid #000;
-    cursor: pointer;
-  }
+  margin-top: 150px;
+}
+.BurgerItem{
+  position: relative;
+  top: 0;
+  left: 200px;
+  display: block;
+  margin-bottom: 6px;
+  width: 30px;
+  border-bottom: 3px solid #000;
+  cursor: pointer;
+}
+.butonGroup{
+  display: flex;
+  justify-content: space-between;
+}
   
-  .Select{
-    margin-left: 8px;
-    width: 220px;
-    height: 40px;
-    display: inline-block;
-  }
-  h2{
-    margin: 40px 0 20px 10px;
-    color: black;
-    text-transform: uppercase;
-    font-size: 24px;
-  }
+.Select{
+  margin-left: 8px;
+  width: 220px;
+  height: 40px;
+  display: inline-block;
+}
+h2{
+  margin: 40px 0 20px 10px;
+  color: black;
+  text-transform: uppercase;
+  font-size: 24px;
+}

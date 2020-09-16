@@ -1,54 +1,54 @@
 .Button{
-    display: inline-block;
-    padding: 10px 30px;
-    border-radius: 50px;
-    border: 1px solid #ccc;
-    color: #000;
-    margin-right: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 12px;
+ display: inline-block;
+ padding: 10px 30px;
+ border-radius: 50px;
+ border: 1px solid #ccc;
+ color: #000;
+ margin-right: 15px;
+ text-transform: uppercase;
+ font-weight: bold;
+ font-size: 12px;
 }
 .Button:hover {
-    box-shadow:  3px 3px 3px 3px rgba( 0, 0, 0, 0.5 );
-    transition: box-shadow 0.3s ease-in;
+ box-shadow:  3px 3px 3px 3px rgba( 0, 0, 0, 0.5 );
+ transition: box-shadow 0.3s ease-in;
 }
 .Button:focus {
-    outline: none;
+ outline: none;
 }
 .Button:active {
-    box-shadow: inset 2px 2px 1px rgba( 0, 0, 0, 0.3 );
+ box-shadow: inset 2px 2px 1px rgba( 0, 0, 0, 0.3 );
 }
 .Button:disabled{
-    background: #ccc;
-    color: black;
-    cursor: not-allowed;
+ background: #ccc;
+ color: black;
+ cursor: not-allowed;
 }
 .success {
-    background:  rgba(161, 240, 69, 1);
-    color: #fff;
+ background:  rgba(161, 240, 69, 1);
+ color: #fff;
 }
 .error {
-    color: rgba(240, 87, 118, 1);
+ color: rgba(240, 87, 118, 1);
 }
 .primary {
-    background: #2884f8;
-    color: #fff;
+ background: #2884f8;
+ color: #fff;
 }
 .filter {
-    background: #2884f8;
-    color: #fff;
-    position: relative;
-    top: 200px;
-    left: 50px;
-    z-index: 1000;
+ background: #2884f8;
+ color: #fff;
+ position: relative;
+ top: 200px;
+ left: 50px;
+ z-index: 998;
 }
 .apply{
-    background: #2884f8;
-    color: #fff;
-    position: relative;
-    top:380px;
-    left: 130px;
-    z-index: 1000;
-  }
+ background: #2884f8;
+ color: #fff;
+ position: relative;
+ top:380px;
+ left: 130px;
+ z-index: 1000;
+}
  
