@@ -44,12 +44,10 @@ class GameContent extends Component {
     })
   }
   onFilterPlatforms = (id) => {
-    console.log(id)
     const platform = this.state.initialGamePlatforms.filter(platform => platform.id == id)
     this.setState({
       gamesPlatforms: platform
     })
-    console.log(platform)
   }
   onGamePlatformHandler = () => {
 

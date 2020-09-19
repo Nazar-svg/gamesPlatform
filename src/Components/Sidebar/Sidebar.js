@@ -4,21 +4,27 @@ import Button from '../../Components/UI/Button/Button';
 
 class Sidebar extends Component {
     state = {
-        option: null
+        option: null,
+        onClear: false
     }
-    onApplyFilterHandler = (onClear = false) => {
-        console.log(onClear)
+    onClearFilterHandler = () => {
+        console.log("nbbgvvcvc",this.state.option)
+        this.setState({
+            option: null
+        })
+        console.log("nbbg",this.state.option)
+    }
+    onApplyFilterHandler = () => { 
         this.props.onFilterPlatforms(this.state.option.id)
-        if(onClear){
-            this.setState({
-                option: null
-            })
-        }
+        this.setState({
+            onClear: true,
+            option: null,
+        })
         console.log(this.state.option)
     }
     onHandleSelect = (event) => {
         this.setState({
-            option: { id: event.target.value }
+            option: { id: event.target.value },
         })
     }
     render() {
@@ -30,8 +36,8 @@ class Sidebar extends Component {
                     <span className={classes.BurgerItem}></span>
                 </div>
                 <h2>Game Platforms</h2>
-                <select className={classes.Select} onChange={this.onHandleSelect}>
-                    <option value={null}>....</option>
+                <select className={classes.Select}  onChange={this.onHandleSelect}>
+                    <option value={this.state.option}>....</option>
                     {this.props.filterOptions.map((option) => {
                         return <option
                             value={option.id}
@@ -42,21 +48,22 @@ class Sidebar extends Component {
                     })}
                 </select>
                 <div className={classes.butonGroup}>
-                {/* <div onClick={() => this.onApplyFilterHandler(true)}>
-                    <Button
-                        disabled={!this.state.option}
-                    >
-                       Clear
+                    <div onClick={this.onClearFilterHandler}>
+                        <Button
+                            type="primary"
+                            disabled={!this.state.onClear}
+                        >
+                            Clear
                 </Button>
-                </div> */}
-                <div onClick={this.onApplyFilterHandler}>
-                    <Button
-                        disabled={!this.state.option}
-                        type="apply"
-                    >
-                        Apply
+                    </div>
+                    <div onClick={this.onApplyFilterHandler}>
+                        <Button
+                            type="primary"
+                            disabled={!this.state.option}
+                        >
+                            Apply
                 </Button>
-                </div>
+                    </div>
                 </div>
             </div>
         )
